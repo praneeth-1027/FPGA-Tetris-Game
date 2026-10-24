@@ -141,7 +141,7 @@ The FPGA drives GAIN high and enables the amplifier when reset is inactive. Do n
 The `sim/` directory includes module-level testbenches, integration scenarios, BLE tests, audio tests, and frame-capture testbenches.
 
 Three dedicated use-case testbenches cover:
-
+ 
 | Testbench | Scenario |
 | --- | --- |
 | `tb_uc1_piece_control.v` | Piece movement, rotation, collision detection, and locking |
