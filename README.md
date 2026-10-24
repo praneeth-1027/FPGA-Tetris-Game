@@ -94,7 +94,7 @@ BLE commands are single ASCII characters. Unsupported bytes are ignored. The FPG
 
 ## Hardware Connections
 
-The pin assignments are defined in `Tetris/constraints/tetris_top.xdc`.
+The pin assignments are defined in `constraints/tetris_top.xdc`.
 
 ### Display and Programming
 
@@ -138,7 +138,7 @@ The FPGA drives GAIN high and enables the amplifier when reset is inactive. Do n
 
 ## Simulation and Verification
 
-The `Tetris/sim/` directory includes module-level testbenches, integration scenarios, BLE tests, audio tests, and frame-capture testbenches.
+The `sim/` directory includes module-level testbenches, integration scenarios, BLE tests, audio tests, and frame-capture testbenches.
 
 Three dedicated use-case testbenches cover:
 
