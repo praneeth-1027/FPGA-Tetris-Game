@@ -130,27 +130,11 @@ The FPGA drives GAIN high and enables the amplifier when reset is inactive. Do n
 
 ## Project Files
 
-Paths below are relative to the supplied `FPGA_Tetris_Final` directory. Place this README alongside the `Tetris` folder when using that layout.
-
 | Path | Contents |
 | --- | --- |
-| `Tetris/Tetris.xpr` | Vivado project |
-| `Tetris/src/` | Synthesizable Verilog modules |
-| `Tetris/constraints/tetris_top.xdc` | Board pin assignments and input clock constraint |
-| `Tetris/sim/` | Verilog testbenches and a schematic PDF |
-| `Tetris/Tetris.runs/impl_1/` | Supplied implementation reports and generated outputs |
-
-## Build and Run
-
-1. Extract the project archive and open `Tetris/Tetris.xpr` in Vivado. Vivado 2025.2 matches the supplied implementation reports.
-2. Confirm that the target device is `xc7a35tcpg236-1` and the design top module is `tetris_top`.
-3. Check that the files in `Tetris/src/` are present as design sources and `Tetris/constraints/tetris_top.xdc` is enabled.
-4. Run synthesis, implementation, and bitstream generation. Review the reports for the generated build.
-5. Connect the VGA monitor and any required Pmod modules, then power the board and connect its USB programming interface.
-6. Open Hardware Manager, connect to the board, and program it using the generated bitstream.
-7. Press BTNC to reset, then use the direction buttons or BLE commands to play.
-
-If the saved project contains paths that do not resolve on another computer, create a new RTL project for `xc7a35tcpg236-1`, add all `.v` files from `Tetris/src/`, add the XDC file, and set `tetris_top` as the design top. Add testbenches separately as simulation sources.
+| `src/` | Synthesizable Verilog modules |
+| `constraints/tetris_top.xdc` | Board pin assignments and input clock constraint |
+| `sim/` | Verilog testbenches and a schematic PDF |
 
 ## Simulation and Verification
 
